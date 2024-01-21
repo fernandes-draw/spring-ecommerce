@@ -25,10 +25,11 @@ public class UploadFileService {
 
 		return "default.jpg";
 	}
-	
+
 	public void deleteImage(String name) {
 		String route = "images//";
 		File file = new File(route + name);
+		file.delete();
 	}
 
 }
